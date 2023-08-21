@@ -24,7 +24,7 @@ slave-skip-errors=1062
 ```
 建立可访问主机数据的账号，配置权限
 ```shell
-CREATE USER 'slave'@'%' IDENTIFIED WITH mysql_native_password BY '1234556';
+CREATE USER 'slave'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
 
 GRANT REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO 'slave'@'%';
 
